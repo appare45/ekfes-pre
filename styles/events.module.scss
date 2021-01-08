@@ -1,0 +1,167 @@
+@import './global_variable.scss';
+
+.sort {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  li {
+    background: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Yu Gothic, 'Yu Gothic';
+    font-weight: 500;
+    &:hover {
+      background: red;
+    }
+    &.active {
+      background: red;
+      cursor: default;
+    }
+  }
+}
+
+.eventsList {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  li {
+    background: white;
+    color: black;
+    flex: 1;
+    text-align: center;
+    margin: 30px 50px;
+    min-width: 20%;
+    line-height: 70px;
+    border-right: 10px solid lightgreen;
+    list-style: none;
+    position: relative;
+    font-family: Yu Gothic, 'Yu Gothic';
+    font-weight: 500;
+    cursor: pointer;
+    &::before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      position: absolute;
+      background: lightgreen;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:hover {
+      transform: rotate(0) !important;
+    }
+    .title {
+      background: white;
+      z-index: 3;
+    }
+    .data {
+      z-index: 5;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.detail {
+  position: fixed;
+  width: 55vh;
+  max-width: 90vw;
+  @include mq-md {
+    width: 90vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  height: 90vh;
+  background: white;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  filter: sepia(30%);
+  z-index: 1;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: white;
+    z-index: -3;
+    top: 10px;
+    left: 10px;
+  }
+  .container {
+    height: 90%;
+    width: 90%;
+    border-bottom: 3px solid black;
+    font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体',
+      sans-serif;
+    h2 {
+      line-height: 2.5;
+      display: inline;
+      position: relative;
+      &::before {
+        filter: sepia(40%) grayscale(20%);
+        z-index: -1;
+        position: absolute;
+        opacity: 0.5;
+        content: '';
+        left: 5%;
+        bottom: 0;
+        width: 100%;
+        height: 75%;
+        border-radius: 10px 5px 15px 5px;
+        background: red;
+      }
+    }
+
+    p {
+      padding: 10px;
+      font-weight: 600;
+    }
+    .imageArea {
+      width: 100%;
+      overflow: hidden;
+      filter: sepia(100%) grayscale(70%);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    position: relative;
+    &::before {
+      position: absolute;
+      filter: sepia(60%);
+      right: -35%;
+      text-align: right;
+      padding: 0 10px;
+      top: 0;
+      content: '一般';
+      width: 120px;
+      height: 35px;
+      line-height: 35px;
+      background: lightgreen;
+      font-weight: 600;
+    }
+  }
+  .closeButton {
+    position: absolute;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 20px;
+    top: -25px;
+    border: none;
+    font-family: Yu Gothic, 'Yu Gothic';
+    font-weight: 600;
+    color: red;
+  }
+}

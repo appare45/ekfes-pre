@@ -1,0 +1,22 @@
+$typo-white: #f0f0f0;
+$body-black-back: #1f1627;
+.footer {
+  color: $typo-white;
+  opacity: 0.8;
+  text-align: center;
+  margin-bottom: 20px;
+  small {
+    font-family: Yu Gothic;
+  }
+  .credit {
+    font-family: Yu Gothic, 'Yu Gothic';
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.main {
+  min-height: 100vh;
+}

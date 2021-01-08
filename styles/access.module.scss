@@ -1,0 +1,48 @@
+.way {
+  font-family: Yu Gothic, 'Yu Gothic';
+  font-weight: 500;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  h2 {
+    color: white;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 80%;
+      width: 4px;
+      right: 0;
+      transform: rotate(60deg) translate(4px, 4px);
+      border-radius: 4px;
+      background: white;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      height: 80%;
+      width: 4px;
+      right: 0;
+      transform: rotate(60deg) translate(-4px, -4px);
+      border-radius: 4px;
+      background: white;
+    }
+  }
+  ul {
+    list-style: none;
+  }
+}
+
+.map {
+  iframe {
+    width: 100%;
+  }
+  width: 100%;
+  position: relative;
+  &:hover &::before {
+    content: '詳しく見る';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}

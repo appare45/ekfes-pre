@@ -1,0 +1,18 @@
+$body-black-back: #0e0c0f;
+$typo-white: #f0f0f0;
+$light-gray: #c6cecc;
+
+$breakpoint: 768px;
+$breakpoint-md: 960px;
+
+@mixin mq {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media screen and (max-width: $breakpoint-md) {
+    @content;
+  }
+}

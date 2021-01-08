@@ -1,0 +1,57 @@
+@import './global_variable.scss';
+
+.title {
+  display: inline-block;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 50px;
+  color: $typo-white;
+  position: relative;
+  z-index: 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  &::before {
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+    content: '';
+    left: -5%;
+    bottom: 5%;
+    width: 115%;
+    height: 35%;
+    background: red;
+  }
+}
+
+.embed {
+  width: 100%;
+  display: block;
+  border: none;
+  height: 50vh;
+  max-height: 100vh;
+  overflow-y: scroll;
+  margin-bottom: 50px;
+}
+
+.section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.main {
+  flex: 1;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">5月11日、12日に開催する第72回栄光祭の公式アカウントです。 <br>今年もTwitterを使い、準備の様子やHPの更新など、今どうなってるかをみなさんにお知らせします！ <br>栄光祭まであと57日です！これからよろしくお願いいたします！</p>&mdash; 第72回栄光祭@5.11-12 (@EikoFestival) <a href="https://twitter.com/EikoFestival/status/1106539569820766213?ref_src=twsrc%5Etfw">March 15, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
