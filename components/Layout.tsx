@@ -56,7 +56,7 @@ export default function Layout({
         </a>
 
         <br />
-        <small>&copy; 2021 Eiko Festival Committee</small>
+        <small>&copy; 2021 Takaharu Nakamura</small>
       </footer>
       <Menu pageTitle={pageType} />
     </>
