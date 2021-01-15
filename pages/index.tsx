@@ -2,15 +2,12 @@ import Layout from '../components/Layout';
 import { fesTheme } from '../components/Meta';
 import styles from '../styles/Home.module.scss';
 import util from '../styles/util.module.scss';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect } from 'react';
 
 export default function Home() {
   return (
     <Layout
       top
-      pageDescription="2021年5月に行われる栄光祭の公式ホームページです"
+      pageDescription="2021年X月に行われるXX祭の公式ホームページです"
       pageType="home"
     >
       <div className={util.container}>
@@ -21,10 +18,10 @@ export default function Home() {
               <h1 className={`${styles.theme}`}>{fesTheme}</h1>
               <ul className={`${styles.time}`}>
                 <li>
-                  <time>'20/05/12</time>
+                  <time>'XX/XX/12</time>
                 </li>
                 <li>
-                  <time>'20/05/13</time>
+                  <time>'XX/XX/13</time>
                 </li>
               </ul>
             </div>
@@ -35,8 +32,8 @@ export default function Home() {
             <p>コロナウイルスの世界的感染拡大の中で行う初めての文化祭</p>
             <p>例え困難な状況の中でも最高のパフォーマンスを発揮する</p>
             <p>
-              これまでに無い体験を全栄光生で作り上げる
-              2021年栄光祭をお楽しみください！
+              これまでに無い体験を全XX生で作り上げる
+              2021年XX祭をお楽しみください！
             </p>
           </section>
           <section className={`${styles.Outline} ${util.section}`}>
@@ -45,14 +42,14 @@ export default function Home() {
               <div className={styles.day}>
                 <h3>Day1</h3>
                 <ul>
-                  <li>5月12日</li>
+                  <li>X月12日</li>
                   <li>9:00~15:30</li>
                 </ul>
               </div>
               <div className={styles.day}>
                 <h3>Day2</h3>
                 <ul>
-                  <li>5月13日</li>
+                  <li>X月13日</li>
                   <li>9:00~16:00</li>
                 </ul>
               </div>
@@ -101,7 +98,7 @@ export default function Home() {
             <div className={styles.messages_flex}>
               <div className={styles.message}>
                 <p>
-                  全ての栄光生がそれぞれの色に、輝くことができる、そんな栄光祭にむけて準備を進めてきました。
+                  全てのXX生がそれぞれの色に、輝くことができる、そんなXX祭にむけて準備を進めてきました。
                 </p>
                 <p>
                   例年とは違った形ですが、例年と違うからこそ、新しい楽しみ方を感じて頂ければ幸いです。
@@ -109,7 +106,7 @@ export default function Home() {
               </div>
               <div className={styles.message}>
                 <p>
-                  全ての栄光生がそれぞれの色に、輝くことができる、そんな栄光祭にむけて準備を進めてきました。
+                  全てのXX生がそれぞれの色に、輝くことができる、そんなXX祭にむけて準備を進めてきました。
                 </p>
                 <p>
                   例年とは違った形ですが、例年と違うからこそ、新しい楽しみ方を感じて頂ければ幸いです。

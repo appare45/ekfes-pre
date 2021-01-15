@@ -15,15 +15,12 @@ export const Twemb = () => {
   }, []);
   return (
     <blockquote className="twitter-tweet">
-      <p lang="ja" dir="ltr">
-        5月11日、12日に開催する第72回栄光祭の公式アカウントです。 <br />
-        今年もTwitterを使い、準備の様子やHPの更新など、今どうなってるかをみなさんにお知らせします！{' '}
-        <br />
-        栄光祭まであと57日です！これからよろしくお願いいたします！
+      <p lang="en" dir="ltr">
+        the bar is low, 2021
       </p>
-      &mdash; 第72回栄光祭@5.11-12 (@EikoFestival){' '}
-      <a href="https://twitter.com/EikoFestival/status/1106539569820766213?ref_src=twsrc%5Etfw">
-        March 15, 2019
+      &mdash; Twitter (@Twitter){' '}
+      <a href="https://twitter.com/Twitter/status/1345021162959503360?ref_src=twsrc%5Etfw">
+        January 1, 2021
       </a>
     </blockquote>
   );
@@ -32,7 +29,7 @@ export const Twemb = () => {
 export default function Home() {
   return (
     <Layout
-      pageDescription="2021年5月に行われる栄光祭の公式ホームページです"
+      pageDescription="2021年X月に行われるXX祭の公式ホームページです"
       pageTitle="アクセス"
       pageUrl="about"
       pageType="about"
@@ -43,22 +40,16 @@ export default function Home() {
             <h1 className={util.title}>ABOUT</h1>
             <iframe
               height="360"
-              src="https://www.youtube-nocookie.com/embed/0Zn-5SLSoFM"
+              src="https://www.youtube-nocookie.com/embed/aGtK8GJfH5Q"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               className={util.embed}
             ></iframe>
             <iframe
-              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Feikogakuen%2Fposts%2F1780587705448508&width=600&show_text=false&height=800&appId"
+              src="https://www.facebook.com/facebookappJapan/posts/10158471235474024"
               className={util.embed}
               scrolling="no"
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
             ></iframe>
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSf-xwpXr0gpTCBWuFVFcXYPTW71aKvG3dm50QEan2ekegoTrQ/viewform?embedded=true"
-              className={util.embed}
-            >
-              読み込んでいます…
-            </iframe>
             <Twemb />
           </div>
         </div>

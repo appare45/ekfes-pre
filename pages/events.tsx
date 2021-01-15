@@ -174,7 +174,7 @@ function EventDetail({
             <figure className={styles.imageArea}>
               <img
                 src={eventDetailData.image}
-                alt={`${eventDetailData.name} | 2021年度栄光祭`}
+                alt={`${eventDetailData.name} | 2021年度文化祭`}
               />
             </figure>
           )}
@@ -238,7 +238,7 @@ export const EventContent = React.memo(() => {
 export default function Events() {
   return (
     <Layout
-      pageDescription="2021年栄光祭のイベント一覧です"
+      pageDescription="2021年XX祭のイベント一覧です"
       pageTitle="イベント"
       pageType="events"
     >

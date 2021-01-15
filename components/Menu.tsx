@@ -10,10 +10,10 @@ export default function Menu({ pageTitle }: { readonly pageTitle?: pageType }) {
       <nav className={`${styles.navigation} ${!menuIsOpen && styles.open}`}>
         <ul className={styles.social}>
           <li>
-            <a href="https://twitter.com/EikoFestival">Tw</a>
+            <a href="https://twitter.com/">Tw</a>
           </li>
           <li>
-            <a href="https://www.facebook.com/eiko.fes">Fb</a>
+            <a href="https://www.facebook.com/">Fb</a>
           </li>
         </ul>
         <ul className={styles.pages}>
