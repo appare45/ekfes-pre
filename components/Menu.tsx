@@ -17,22 +17,22 @@ export default function Menu({ pageTitle }: { readonly pageTitle?: pageType }) {
           </li>
         </ul>
         <ul className={styles.pages}>
-          <li className={pageTitle == 'home' && styles.page}>
+          <li className={pageTitle == 'home' ? styles.page : undefined}>
             <Link href="./">
               <a>HOME</a>
             </Link>
           </li>
-          <li className={pageTitle == 'events' && styles.page}>
+          <li className={pageTitle == 'events' ? styles.page : undefined}>
             <Link href="./events">
               <a>EVENTS</a>
             </Link>
           </li>
-          <li className={pageTitle == 'access' && styles.page}>
+          <li className={pageTitle == 'access' ? styles.page : undefined}>
             <Link href="./access_">
               <a>ACCESS</a>
             </Link>
           </li>
-          <li className={pageTitle == 'about' && styles.page}>
+          <li className={pageTitle == 'about' ? styles.page : undefined}>
             <Link href="./about">
               <a>ABOUT</a>
             </Link>
