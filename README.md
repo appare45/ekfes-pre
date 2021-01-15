@@ -6,12 +6,12 @@
 
 HTMLファイルにエクスポートした物を提出しようとしたら、ローカル環境で見るとパスが上手くつながらないという不具合を発見したので仕方なくGitHubに上げてVercelデプロイするということになりました。サーバーを立てると上手くいきます。
 
-![](https://img.shields.io/github/checks-status/appare45/ekfes-pre/main)
+![](https://img.shields.io/github/checks-status/appare45/feshp/main)
 
 ## Usage
 Setup
 ```bash
-git clone https://github.com/appare45/ekfes-pre.git
+git clone https://github.com/appare45/feshp.git
 npm install
 npm run build
 ```
