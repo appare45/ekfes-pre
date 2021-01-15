@@ -69,8 +69,8 @@
 }
 
 .detail {
-  animation: 1s ease slidein;
-  @keyframes slidein {
+  animation: slideIn 1s ease forwards;
+  @keyframes slideIn {
     from {
       transform: translateY(-100%);
     }
