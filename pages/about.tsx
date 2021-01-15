@@ -45,7 +45,7 @@ export default function Home() {
               className={util.embed}
             ></iframe>
             <iframe
-              src="https://www.facebook.com/facebookappJapan/posts/10158471235474024"
+              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FfacebookappJapan%2Fposts%2F10158471235474024"
               className={util.embed}
               scrolling="no"
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
