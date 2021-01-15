@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from './../styles/layout.module.scss';
 import Menu from './Menu';
 import { pageType } from './../types';
+import Warning from './Warning';
 
 export const globalTitle: string = '2021年 文化祭（仮）';
 export const fesTheme: string = 'Highlight'; // 文化祭テーマ
@@ -12,9 +13,7 @@ export const fes_theme = 'highlight';
 export default function Layout({
   children,
   pageTitle,
-  pageOgp,
   pageDescription,
-  pageUrl,
   top,
   pageType,
 }: {
@@ -54,6 +53,7 @@ export default function Layout({
         </small>
       </footer>
       <Menu pageTitle={pageType} />
+      <Warning />
     </>
   );
 }

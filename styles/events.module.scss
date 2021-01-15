@@ -69,16 +69,16 @@
 }
 
 .detail {
-  animation: slideIn 1s ease forwards;
+  animation: slideIn 0.6s ease forwards;
   @keyframes slideIn {
     from {
-      transform: translateY(-100%);
+      transform: translateY(200%);
     }
     to {
-      transform: translateY(0);
+      transform: translateY(-50%);
     }
   }
-  transform: translateY(-100%);
+  transform: translateY(200%);
   position: fixed;
   width: 55vh;
   max-width: 90vw;
