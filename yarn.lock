@@ -3694,6 +3694,11 @@ path-parse@^1.0.6:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
 
+path-resolve-for-local-preview@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/path-resolve-for-local-preview/-/path-resolve-for-local-preview-1.0.0.tgz#e1f7a5a6f64fba6259d15c3073252e77fec76e57"
+  integrity sha512-AMZo4YKM17F/z+KDdJGaQJuH7olHjFPt0l7tgEA4aiscKMU6eBipNO0RupbJ1Pjz23DcSuAkDDKqRb1FSafo6g==
+
 path-to-regexp@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-2.2.1.tgz#90b617025a16381a879bc82a38d4e8bdeb2bcf45"
